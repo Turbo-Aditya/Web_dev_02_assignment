@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+header {
+    overflow: auto; 
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+header h1 {
+    float: left; 
+    margin-left: 20px;
+}
+
+nav {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    float: left;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+
+#about {
+    margin: 20px 0;
+}
+
+
+.personal {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.personal img {
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.about-text {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.about-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    font-size: 16px;
+}
+
+
+.gallery {
+    text-align: center;
+}
+
+.gallery h3 {
+    margin-bottom: 10px;
+}
+
+.gallery video {
+    width: 300px; 
+    height: auto;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+
+#Education {
+    margin-top: 30px;
+    overflow: hidden; 
+}
+
+.timeline-yr {
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+    float: left; 
+    width: 20%;
+}
+
+.Ed-info {
+    float: right; 
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-left: 4px solid #333;
+    width: 75%;
+}
+
+.Ed-info h3 {
+    font-size: 20px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    overflow: hidden; 
+}
+
+form label {
+    margin: 10px 0 5px;
+    float: left; 
+    width: 100%;
+    max-width: 400px;
+}
+
+form input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+.contact-me h2 {
+    align-items: center;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        overflow: hidden;
+    }
+
+    #about img {
+        float: none; 
+        display: block;
+        margin: 0 auto;
+    }
+
+    #about p {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    table, th, td {
+        font-size: 14px;
+    }
+
+    .Ed-info, .timeline-yr {
+        float: none; 
+        width: 100%;
+    }
+
+    nav ul li {
+        float: none;
+    }
+}
+
+
+@media (max-width: 365px) {
+    body {
+        padding: 0 10px;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul li {
+        float: none;
+        margin-bottom: 10px;
+    }
+
+    #about img {
+        float: none; 
+        width: 100px;
+    }
+
+    form input {
+        width: 100%;
+    }
+
+    table, th, td {
+        font-size: 12px;
+    }
+
+    .Ed-info, .timeline-yr {
+        float: none; 
+        width: 100%;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+
+#p-gallery {
+    margin: 50px 0;
+    text-align: center;
+}
+
+#certifications h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.gallery {
+
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+ 
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+
+}
+
+.gallery-item figcaption {
+    position: absolute;
+    bottom: 0;
+    background: gray;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+
+}
+
+
+.gallery-item:hover {
+  border: 3px solid black;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.b-video video {
+    width: 300px; 
+    height: auto;
+    max-width: 100%;
+}
+
+.vandaudio {
+    text-align: center; 
+    overflow: hidden; 
+}
+
+.audio p {
+    font-size: 150%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

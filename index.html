@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <h1>Aditya Verma</h1>
+
+        </div>
+        <div class="header-right">
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#Education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <div class="personal"> 
+                <img src="IMG_4431-compressed.jpg" alt="Profile Picture">
+                <div class="about-text">
+                    <h2>Hey Folks, I'm Aditya Verma</h2>
+                    <p>I am a grad student at Northeastern University. I am highly energetic in user experience design, interfaces and web development.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="p-gallery">
+            <h2>My Personal Gallery</h2>
+            <div class="gallery">
+                <figure class="gallery-item">
+                    <img src="UC-c69fb25c-0212-4f6c-b746-d45779732617.jpg" alt="Certification 1">
+                    <figcaption>Certification 1 - Web Development</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="GlobalExpansion_8.21.23_Campus_JessicaXing_15-2.jpg" alt="Personal Gallery 1">
+                    <figcaption>Personal Gallery</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="IMG_4431-compressed.jpg" alt="Personal Gallery 2">
+                    <figcaption>Personal Gallery 2</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <div class="vandaudio">
+            <h3>My favorite boston video</h3>
+            <div class="b-video">
+                  <video controls src="IMG_5305.MOV"></video>
+            </div>
+            <div class="audio"> 
+                <p>Play the Music</p>
+            <audio controls>
+                <source
+                    src="30 Second Timer - Fun Upbeat Music.mp3">
+            </audio>
+        </div>
+
+        </div>
+        
+        
+       
+       
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <table>
+                <tr>
+                    <th>Project Name</th>
+                    <th>Description</th>
+                    <th>Link</th>
+                </tr>
+                <tr>
+                    <td>SneakersKart</td>
+                    <td>A full-stack e-commerce platform for sneakers.</td>
+                    <td><a href="#">GitHub</a></td>
+                </tr>
+                <tr>
+                    <td>LinkedIn Replica</td>
+                    <td>A fully functional LinkedIn Clone with all functionality.</td>
+                    <td><a href="#">GitHub</a></td>
+                </tr>
+            </table>
+
+        </section>
+
+        <section id="Education">
+            <h2>Educations</h2>
+            <div class="timeline-yr">
+            <span>2020-2024</span>
+        </div>
+        <div class="Ed-info">
+            <h3><span>Bachelor in Technology<small>B.Tech</small></h3>
+                <p>Completed Bachelor in Technology from Delhi, India</p>
+        </div>
+        <div class="timeline-yr">
+            <span>2024-Present</span>
+        </div>
+        <div class="Ed-info">
+            <h3><span>Masters of Science<small>MS</small></h3>
+                <p>Currently Pursing MS in Software Engineering from NEU, Boston, USA</p>
+        </div>
+
+        </section>
+
+        <section id="contact">
+            <div class="contact-me">
+            <h2>Contact Me</h2>
+            <form action="mailto:aditya@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <button type="submit">Submit</button>
+            </form>
+            <p>Call me at: <a href="tel:+18575761533">+18575761533</a></p>
+        </div>
+        </section>
+
+        <footer>
+            <p>2024 Aditya Verma</p>
+            <p>Designed by Aditya Verma</p>
+        </footer>
+
+
+    </main>
+    
+</body>
+</html>
